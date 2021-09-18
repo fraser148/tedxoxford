@@ -1,0 +1,706 @@
+@font-face {
+  font-family: 'WorkSans';
+  src: local('WorkSans'),
+  url(./../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf) format('truetype');
+  font-weight: 100 800;
+}
+
+/** TABLE OF CONTENTS
+==============================
+1 — Global Styles
+1.1 — Colours
+1.2 — Colors
+2 — Layout
+2.1 — Navbar
+2.2 — Menu
+3 — Small Components
+3.1 — Events
+3.2 - Talks
+3.3 - Newsletter
+3.4 - Footer
+3.5 - Profile
+4 — Micro Components
+4.1 - Ted Title (Classic)
+5 — Pages
+5.1 — Talks
+5.2 - Committee
+==============================
+
+
+
+================
+[1.1] Colours  #
+================
+**/
+
+$red: #E62B1E;
+$heading-blue: #0A2540;
+$header-weight: 600;
+$header-size: 50px;
+$btnScaler: 1.06;
+$main-font: 'WorkSans';
+
+body {
+  font-family: $main-font;
+  margin:0;
+}
+
+.main-container {
+  display:block;
+  margin:auto;
+  width: 1100px;
+  max-width:100%;
+}
+
+/**
+===============
+[2.1] NAVBAR  #
+===============
+**/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+
+  img {
+    height: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    margin: 0px 5px;
+    padding: 5px;
+    color: black;
+    font-weight: 300;
+    transition: ease-in-out 0.3s;
+    display: inline-block;
+  }
+
+  .links a:hover {
+    $hover-up: -2px;
+    -moz-transform: translate(0, $hover-up);
+    -ms-transform: translate(0, $hover-up);
+    -o-transform: translate(0, $hover-up);
+    -webkit-transform: translate(0, $hover-up);
+    transform: translate(0, $hover-up);
+    color: black;
+    text-decoration: none;
+  }
+  
+  a.join-news {
+    background-color: $red;
+    border-radius: 30px;
+    color: white;
+    padding: 5px 14px 6px 14px;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+/**
+==============
+[2.2] INTRO  #
+==============
+**/
+
+.intro {
+  padding: 0px 30px;
+  width: 100%;
+  max-width:100%;
+
+  h1 {
+    color: $heading-blue;
+    font-size: $header-size;
+    margin: 14px 0px;
+    font-weight: $header-weight;
+  }
+
+  p {
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+
+  img {
+    max-width:100%;
+    margin: 20px;
+
+  }
+}
+
+.artwork {
+  img {
+    padding: 50px 30px;
+  }
+}
+
+/**
+===============
+[3.1] EVENTS  #
+===============
+**/
+
+.eventHolder {
+  padding: 0px 30px;
+}
+
+.event {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #999999;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin: 40px 0px 30px 0px;
+
+
+  .event-image, .event-content {
+    display: inline-block;
+    width:50%;
+    max-width: 50%;
+    margin: 10px 60px 50px 40px;
+  }
+
+  .event-content {
+    position: relative;
+  }
+
+  .date {
+    color: $red;
+    margin: 20px 0px 15px 0px;
+    font-size: 1em;
+  }
+
+  .title {
+    color: $heading-blue;
+    font-size:40px;
+    font-weight: 700;
+    margin: 5px 00px;
+  }
+
+  .details {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .location, .origin, .person {
+    margin:0;
+  }
+
+  .location {
+    font-weight: 600;
+  }
+
+  .origin, .person {
+    color: #666666;
+    font-weight: 300;
+  }
+
+  .person {
+    margin-bottom: 10px;
+  }
+
+  .find-more-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:$red;
+    color:white;
+    padding: 8px 13px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    box-shadow: 0px 0px 3px #999999;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      transform: scale($btnScaler);
+      cursor: pointer;
+    }
+  }
+}
+
+/**
+==============
+[3.2] TALKS  #
+==============
+**/
+
+.talks {
+  display: block;
+  margin: 50px 100px;
+  text-align: center;
+  
+
+  .talks-list {
+    display: flex;
+    justify-content:space-between;
+  }
+  
+  .talk-container {
+    width: 33%;
+    padding:0px 20px;
+  }
+
+  .talk {
+    margin: 0px 00px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    box-shadow: inset 0 -30px 30px 0px rgba(0, 0, 0, 0.918);
+
+    .name, .title {
+      position: absolute;
+      left: 20px;
+      color: white;
+      font-size:24px;
+    }
+
+    .name {
+      font-weight: 200;
+      bottom:24px;
+    }
+
+    .title {
+      bottom: 00px;
+      font-weight:500;
+    }
+  }
+
+  .more {
+    display: inline-block;
+    text-align: center;
+    margin: 30px;
+    background-color: $red;
+    padding: 7px 18px;
+    border-radius: 30px;
+    color:white;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      transform: scale($btnScaler)
+    }
+  }
+}
+
+/**
+===================
+[3.3] NEWSLETTER  #
+===================
+**/
+
+.newsletter {
+  display: block;
+  background-color: $red;
+  width: 100%;
+  color: white;
+  margin: 25px 0px;
+  padding-bottom: 40px;
+
+  .news-container {
+    width:800px;
+    max-width:100%;
+    display: block;
+    margin:auto;
+  }
+
+  .news-cont {
+    display: inline-block;
+    width:50%;
+    vertical-align:top;
+  }
+  
+  .news {
+    margin:0px 40px;
+  }
+
+  .newsletter-signup form > * {
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .newsletter-content {
+    font-weight: 200;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .newsletter-signup {
+    $br: 5px;
+    input[type="email"], input[type="text"], select {
+      padding: 4px;
+      width: 100%;;
+      font-family: $main-font;
+      font-size:16px;
+      border: none;
+      border-radius: $br;
+      border: 0.3px solid #66666698;
+      font-weight: 300;
+      margin: 3px 0px;
+
+      &:placeholder {
+        color: #666666;
+      }
+
+      
+    }
+    select {
+      width: 100%;
+    }
+    @mixin center($extend: true) {
+      @if $extend {
+          @extend %center;
+      } @else {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+      }
+    }
+    
+    %center {
+        @include center($extend: false);
+    }
+    
+    input[type="submit"] {
+      background: none;
+      color: inherit;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      background-color: black;
+      padding: 6px 20px;
+      border-radius: $br;
+      width: 100%;
+      
+    }
+  }
+}
+
+/**
+===============
+[3.4] FOOTER  #
+===============
+**/
+
+.footer {
+  background-color: black;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  color:white;
+
+  .footer-license {
+    margin: 20px;
+  }
+
+  .social-icon {
+    margin:10px;
+  }
+}
+
+/**
+================
+[3.5] PROFILE  #
+================
+**/
+
+.profile-holder {
+  margin-bottom: 20px;
+}
+.profile {
+
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    /*filter: grayscale(100%);*/
+    border-radius: 50px 0px 50px 0px;
+
+  }
+
+  span {
+    display: block;
+    text-align: left;
+  }
+
+  .name {
+    font-weight: 600;
+    padding-top:8px;
+    margin-bottom: -6px;
+    color: $red;
+  }
+
+  .role {
+    font-weight: 300;
+  }
+
+}
+
+/**
+==================
+[4.1] TED TITLE  #
+==================
+**/
+
+.ted-title {
+  display: block;
+  margin: 0px;
+  padding: 30px 0px;
+  text-align: center;
+
+  .first-word, .second-word {
+    display: inline-block;
+  }
+
+  .first-word h1, .second-word h1 {
+    font-size: 3em;
+  }
+
+  .first-word h1 {
+    font-weight: 200;
+  }
+
+  .second-word h1 {
+    font-weight: 800;
+  }
+}
+
+/**
+===================
+[4.2] WAVES ANIM  #
+===================
+**/
+
+.waves {
+  position: relative;
+}
+
+.wave1 {
+  height: calc(50vh);
+  position: absolute;
+  top:0;
+}
+
+.wave2 {
+  height: calc(50vh - 30px);
+  position: absolute;
+  top:30px;;
+}
+
+.wave3 {
+  height: calc(50vh - 60px);
+  position: absolute;
+  top:60px;;
+}
+
+/**
+===================
+[5.1] TALKS PAGE  #
+===================
+**/
+
+.w-back {
+  background-image: url("../images/background.png");
+  background-position: 70% 0%;
+  background-size: cover;
+}
+
+.talks-page {
+  height: 180vh;
+
+  .container-talks-top {
+    width: 100%;
+    margin:auto;
+    max-width:1100px;
+    padding:0px 30px;
+  }
+
+  h1 {
+    color: $heading-blue;
+    font-weight: $header-weight;
+    font-size: $header-size;
+    margin: 16px 0px;
+  }
+
+  .heading {
+    margin-top: 70px;
+    margin-bottom: 20vh;
+  }
+
+  p {
+    font-weight: 300;
+  }
+}
+
+.video-holder {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: stretch;
+
+  a {
+    text-decoration: none;
+  }
+
+  .video {
+    padding: 10px;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      /*filter: grayscale(100%);*/
+      margin-bottom: 20px;
+    }
+
+    
+    span {
+      display: block;
+      text-align: left;
+      padding: 0px 10px;
+    }
+
+    .date {
+      text-transform: capitalize;
+      color: $red;
+      font-weight: 600;
+      font-size:14px;
+    }
+
+    .title {
+      font-weight: 300;
+      font-size:20px;
+      padding-top:8px;
+      margin-bottom: 10px;
+      line-height: normal;
+      color:black;
+    }
+
+    .speaker {
+      font-weight: 500;
+      color: $red;
+      margin-top: auto;
+    }
+
+    .description {
+      color:black;
+      font-size:14px;
+      font-weight: 300;
+    }
+  }
+}
+
+/**
+=======================
+[5.2] COMMITTEE PAGE  #
+=======================
+**/
+
+
+.committee-holder {
+  width: 100%;
+  margin:auto;
+  max-width:1100px;
+  padding:0px 30px;
+}
+
+.committee {
+  padding:0;
+
+  h1 {
+    color: $heading-blue;
+    font-weight: $header-weight;
+    font-size: $header-size;
+    margin: 16px 0px;
+  }
+}
+
+/**
+========================
+[5.3] SPONSORS PAGE #
+=====================
+**/
+
+.sponsors-holder {
+  width: 100%;
+  margin:auto;
+  max-width:1100px;
+  padding:0px 30px;
+
+  .sponsors {
+    padding:0;
+
+    h1 {
+      color: $heading-blue;
+      font-weight: $header-weight;
+      font-size: $header-size;
+      margin: 16px 0px;
+    }
+
+    .sponsors-content {
+      text-align: center;
+
+      .need-sponsors {
+        margin: 80px 40px;
+      }
+
+      .sponsor-button {
+        display: inline-block;
+        margin:20px 100px;
+        color: white;
+        background-color: $red;
+        padding: 10px 20px;
+        border-radius: 40px;
+      }
+    }
+  }
+}
+
+/*
+===================
+## Speakers Page ##
+===================
+*/
+
+.speakers-page {
+  .speakers-col {
+    padding: 30px;
+    .speaker-img {
+      position: relative;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        filter: grayscale(100%);
+      }
+
+      .shadow-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width:100%;
+        height:100%;
+        z-index: 6;
+        box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 5px;
+      }
+    }
+  }
+}
