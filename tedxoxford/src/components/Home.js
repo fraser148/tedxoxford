@@ -16,14 +16,18 @@ const Intro = () => {
         <Col sm={12} md={7} className="content">
           <h1>Beyond Frontiers</h1>
           <p>
-            TEDxOxford is brought to you by a passionate
-            group of university students who believe in
-            TED's core mission of bringing ideas worth
-            spreading to local communities and global
-            audiences. Our team is dedicated to providing
-            a platform that boasts a diverse, inclusive
-            and innovative selection of talks that reflects
-            an ever-evolving intellectual landscape.
+            Our theme this year, “BEYOND FRONTIERS”, was
+            chosen precisely because of its multiplicity.
+            A frontier means many things: a physical boundary
+            between places and planets; a frontline of human
+            knowledge where breakthroughs are being made;
+            or a division of a more abstract kind, between
+            individuals, ideologies, and political systems.
+            Our speakers this year will explore these
+            possibilities and more. Through talks which probe
+            our world's physical and figurative limits, TED
+            aims to cross boundaries and connect disciplines.
+            TEDxOxford 2022: join the conversation.
           </p>
         </Col>
         <Col sm={12} md={5} className="artwork">
@@ -45,12 +49,12 @@ class Home extends React.Component {
             <Intro />
             <Event
               image={eventimg}
-              date={"July 4, 5pm GMT"}
-              title={"Our next event"}
-              details={"At our next exciting event, you are bound to be interested!"}
-              location={"Oxford Playhouse"}
-              origin={"University of Oxford"}
-              person={"John Smith"}
+              date={"Oct 23, 1pm GMT"}
+              title={"G&D's Ice-cream"}
+              details={"Come get FREE ice-cream at G&Ds and find out more about this year’s conference and how you can get involved!"}
+              location={"G&D's"}
+              origin={"St Aldates"}
+              person={"Oxford"}
             />
           </div>
           <Talks/>

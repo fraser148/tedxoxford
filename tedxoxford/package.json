@@ -1,7 +1,7 @@
 {
   "name": "tedxoxford",
   "homepage": "https://tedxoxford.co.uk/",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "private": true,
   "proxy": "https://www.api.tedxoxford.co.uk/",
   "dependencies": {

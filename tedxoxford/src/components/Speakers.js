@@ -18,31 +18,9 @@ class Speakers extends React.Component {
             <div className="speakers-page">
                 <Container className="container-speakers-top">
                     <Row className="heading align-items-center">
-                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
-                            <div className="speaker-img">
-                                <img src={"/speakers/Anja-Meinhardt-using.jpg"} alt="Anja Meinhardt"/>
-                                <div className="shadow-overlay"></div>
-                            </div>
-                        </Col>
-                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col details">
-                            <div className="speaker-details">
-                                <h1>View all of our talks over the past 15 years.</h1>
-                                <p>
-                                Here we have compiled all of the previous TEDxOxford
-                                talks. From Blah talking about blag
-                                to them talking about this, Oxford have seen a huge number
-                                of exceptional speakers. Browse all of our talks as well as
-                                many more from around the world
-                                on TED's Official&nbsp;
-                                <a
-                                    href="https://www.youtube.com/user/TEDtalksDirector"
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    alt="YouTube Link to TED Channel"
-                                >
-                                    YouTube Channel.
-                                </a>
-                            </p>
+                        <Col sm={12} md={12} lg={12} xl={12} className="speakers-col img">
+                            <div className="speaker-header">
+                                <h1>Our Speakers</h1>
                             </div>
                         </Col>
                         <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
@@ -53,77 +31,18 @@ class Speakers extends React.Component {
                         </Col>
                         <Col sm={12} md={9} lg={8} xl={6} className="speakers-col details">
                             <div className="speaker-details">
-                                <h1>View all of our talks over the past 15 years.</h1>
+                                <h1>Stephen Venables</h1>
                                 <p>
-                                Here we have compiled all of the previous TEDxOxford
-                                talks. From Blah talking about blag
-                                to them talking about this, Oxford have seen a huge number
-                                of exceptional speakers. Browse all of our talks as well as
-                                many more from around the world
-                                on TED's Official&nbsp;
-                                <a
-                                    href="https://www.youtube.com/user/TEDtalksDirector"
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    alt="YouTube Link to TED Channel"
-                                >
-                                    YouTube Channel.
-                                </a>
-                            </p>
-                            </div>
-                        </Col>
-                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
-                            <div className="speaker-img">
-                                <img src={"/speakers/Xa-Sturgis.jpg"} alt="Anja Meinhardt"/>
-                                <div className="shadow-overlay"></div>
-                            </div>
-                        </Col>
-                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col details">
-                            <div className="speaker-details">
-                                <h1>View all of our talks over the past 15 years.</h1>
-                                <p>
-                                Here we have compiled all of the previous TEDxOxford
-                                talks. From Blah talking about blag
-                                to them talking about this, Oxford have seen a huge number
-                                of exceptional speakers. Browse all of our talks as well as
-                                many more from around the world
-                                on TED's Official&nbsp;
-                                <a
-                                    href="https://www.youtube.com/user/TEDtalksDirector"
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    alt="YouTube Link to TED Channel"
-                                >
-                                    YouTube Channel.
-                                </a>
-                            </p>
-                            </div>
-                        </Col>
-                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
-                            <div className="speaker-img">
-                                <img src={"/speakers/Jihyun-Park.jpg"} alt="Anja Meinhardt"/>
-                                <div className="shadow-overlay"></div>
-                            </div>
-                        </Col>
-                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col details">
-                            <div className="speaker-details">
-                                <h1>Escaping North Korea</h1>
-                                <p>
-                                Here we have compiled all of the previous TEDxOxford
-                                talks. From Blah talking about blag
-                                to them talking about this, Oxford have seen a huge number
-                                of exceptional speakers. Browse all of our talks as well as
-                                many more from around the world
-                                on TED's Official&nbsp;
-                                <a
-                                    href="https://www.youtube.com/user/TEDtalksDirector"
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    alt="YouTube Link to TED Channel"
-                                >
-                                    YouTube Channel.
-                                </a>
-                            </p>
+                                    Stephen Venables, mountaineer, writer, broadcaster
+                                    and public speaker, was the first Briton to climb
+                                    Everest without supplementary oxygen. He has appeared
+                                    in documentaries for BBC, ITV, and National Geographic,
+                                    presented for Radio 4, and featured in the IMAX movie
+                                    Shackleton’s Antarctic Adventure. His first book,
+                                    Painted Mountains, won the prestigious Boardman Tasker
+                                    Prize for Mountain Literature. He is one of the best
+                                    known mountaineers of his generation.
+                                </p>
                             </div>
                         </Col>
                     </Row>
