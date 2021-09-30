@@ -14,6 +14,7 @@ const Header = () => {
 				<Link to='/sponsors'>SPONSORS</Link>
 				<Link to='/committee'>COMMITTEE</Link>
 				<Link to='/about'>ABOUT</Link>
+				
 				<Link className='join-news' to='/newsletter'>JOIN OUR NEWSLETTER</Link>
 			</div>
 		</div>

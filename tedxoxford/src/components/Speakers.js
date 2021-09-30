@@ -44,6 +44,7 @@ class Speakers extends React.Component {
                                     known mountaineers of his generation.
                                 </p>
                             </div>
+                            
                         </Col>
                     </Row>
                 </Container>
