@@ -29,4 +29,6 @@ tedxoxford/yarn-error.log*
 tedxoxford/amplify
 tedxoxford/amplify-backup
 
+tedxoxford/.gitignoreold
+
 generator.py
