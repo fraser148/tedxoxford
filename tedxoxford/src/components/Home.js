@@ -1,7 +1,7 @@
 import React        from 'react';
 import Header       from './Header.js';
-import Event        from './Event.js';
-import eventimg     from './../images/person.png';
+// import Event        from './Event.js';
+// import eventimg     from './../images/person.png';
 import Talks        from './Talks.js';
 import NewsletterSU from './NewsletterSU.js';
 import Footer       from './Footer.js';
@@ -13,7 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const HeaderIMG = () => (
   <Parallax blur={2} className="paral" bgImage="https://media-exp1.licdn.com/dms/image/C4D1BAQGRCL25mnKg7g/company-background_10000/0/1519798430700?e=2159024400&v=beta&t=yhScNxZXfaHO-eXQqzpIGWNRVeVJA77np3n587d7z4o" bgImageAlt="the cat" strength={200}>
       <div className="paral-inner">
-        <img src={"./logo-final.png"}/>
+        <img src={"./logo-final.png"} alt="logo"/>
         <p className="event-deet"><b>Next Event:</b> 29th Jan 2022</p>
         <p className="event-deet"><b>Location:</b> Oxford Town Hall</p>
         <Link className="tickets" to="/speaker">SPEAKER LINEUP</Link>
