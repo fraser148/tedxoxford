@@ -10,8 +10,11 @@ class TalksPage extends React.Component {
         this.state = {videos: []}
     }
 
+    
+
     async componentDidMount() {
         try {
+          window.scrollTo(0, 0);
           const res = await fetch("https://www.api.tedxoxford.co.uk/getVideos", {
             method: "POST",
             headers: {
@@ -21,6 +24,7 @@ class TalksPage extends React.Component {
           })
     
           const result = await res.json();
+
     
           if (result && result.success) {
             this.setState({
@@ -33,6 +37,7 @@ class TalksPage extends React.Component {
           console.log(err);
         }
       }
+
 
     render() {
       return (

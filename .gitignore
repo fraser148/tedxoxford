@@ -1,5 +1,32 @@
 backend/node_modules
 backend/.env
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
 tedxoxford/node_modules
+tedxoxford/.pnp
+tedxoxford/.pnp.js
+
+# testing
+tedxoxford/coverage
+
+# production
 tedxoxford/build
 tedxoxford/build.zip
+
+# misc
+tedxoxford/.DS_Store
+tedxoxford/.env.local
+tedxoxford/.env.development.local
+tedxoxford/.env.test.local
+tedxoxford/.env.production.local
+
+tedxoxford/npm-debug.log*
+tedxoxford/yarn-debug.log*
+tedxoxford/yarn-error.log*
+
+tedxoxford/amplify
+tedxoxford/amplify-backup
+
+generator.py

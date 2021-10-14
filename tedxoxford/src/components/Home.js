@@ -5,15 +5,27 @@ import eventimg     from './../images/person.png';
 import Talks        from './Talks.js';
 import NewsletterSU from './NewsletterSU.js';
 import Footer       from './Footer.js';
+import { Parallax } from 'react-parallax';
 import { Container, Row, Col }   from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const HeaderIMG = () => (
+  <Parallax blur={2} className="paral" bgImage="https://media-exp1.licdn.com/dms/image/C4D1BAQGRCL25mnKg7g/company-background_10000/0/1519798430700?e=2159024400&v=beta&t=yhScNxZXfaHO-eXQqzpIGWNRVeVJA77np3n587d7z4o" bgImageAlt="the cat" strength={200}>
+      <div className="paral-inner">
+        <img src={"./logo-final.png"}/>
+        <p className="event-deet"><b>Next Event:</b> 29th Jan 2022</p>
+        <p className="event-deet"><b>Location:</b> Oxford Town Hall</p>
+        <Link className="tickets" to="/speaker">SPEAKER LINEUP</Link>
+      </div>
+  </Parallax>
+);
 
 const Intro = () => {
   return (
     <Container className='intro'>
       <Row className="align-items-center">
-        <Col sm={12} md={7} className="content">
+        <Col sm={{span: 12, offset:0}} md={{ span: 8, offset: 2 }} className="content">
           <h1>Beyond Frontiers</h1>
           <p>
             Our theme this year, “BEYOND FRONTIERS”, was
@@ -30,9 +42,9 @@ const Intro = () => {
             TEDxOxford 2022: join the conversation.
           </p>
         </Col>
-        <Col sm={12} md={5} className="artwork">
+        {/* <Col sm={12} md={5} className="artwork">
           <img src={"./logo-final.png"} alt='Filler artwork'/>
-        </Col>
+        </Col> */}
       </Row>
 
     </Container>
@@ -46,16 +58,19 @@ class Home extends React.Component {
         <div>
           <div className="main-container">
             <Header />
+          </div>
+          <HeaderIMG/>
+          <div className="main-container">
             <Intro />
-            <Event
+            {/* <Event
               image={eventimg}
-              date={"Oct 23, 1pm GMT"}
+              date={"Oct 23, 3pm GMT"}
               title={"G&D's Ice-cream"}
               details={"Come get FREE ice-cream at G&Ds and find out more about this year’s conference and how you can get involved!"}
               location={"G&D's"}
               origin={"St Aldates"}
               person={"Oxford"}
-            />
+            /> */}
           </div>
           <Talks/>
           <NewsletterSU />

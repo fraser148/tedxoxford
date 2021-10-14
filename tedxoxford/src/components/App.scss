@@ -129,11 +129,60 @@ body {
     margin: 20px;
 
   }
+
+  .content {
+    margin-top:20px;
+    text-align: center;
+  }
 }
 
 .artwork {
   img {
     padding: 50px 30px;
+  }
+}
+
+.paral {
+  color:white;
+
+  .paral-inner {
+    display: block;
+    margin: auto;
+    width: 1100px;
+    max-width:100%;
+    text-align: center;
+    padding: 80px 0px;
+
+    img {
+      width: 700px;
+      max-width: 100%;
+      margin:auto;
+      padding: 60px 20px;
+    }
+
+    .event-deet {
+      font-size:28px;
+      margin:0 auto;
+      padding:0;
+    }
+
+    .tickets {
+      display: inline-block;
+      margin-top:20px;
+      background-color:$red;
+      color:white;
+      padding: 8px 24px;
+      border-radius: 30px;
+      font-size: 1.2em;
+      box-shadow: 0px 0px 3px #505050;
+      transition: ease-in-out 0.3s;
+
+      &:hover {
+        transform: scale($btnScaler);
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -235,13 +284,13 @@ body {
   
 
   .talks-list {
-    display: flex;
-    justify-content:space-between;
+    padding:0;
   }
   
   .talk-container {
-    width: 33%;
+    width: 100%;
     padding:0px 20px;
+    margin-bottom: 20px;
   }
 
   .talk {
@@ -259,7 +308,7 @@ body {
       position: absolute;
       left: 20px;
       color: white;
-      font-size:24px;
+      font-size:20px;
     }
 
     .name {

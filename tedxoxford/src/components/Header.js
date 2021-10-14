@@ -10,12 +10,11 @@ const Header = () => {
 			</div>
 			<div className="links">
 				<Link to='/talks'>TALKS</Link>
-				<Link to='/speakers'>SPEAKERS</Link>
+				<Link to='/speaker'>SPEAKERS</Link>
 				<Link to='/sponsors'>SPONSORS</Link>
 				<Link to='/committee'>COMMITTEE</Link>
 				<Link to='/about'>ABOUT</Link>
-				
-				<Link className='join-news' to='/newsletter'>JOIN OUR NEWSLETTER</Link>
+				<a className='join-news' target="_blank" rel="noreferrer" href='https://tickets.tedxoxford.co.uk'>BUY TICKETS</a>
 			</div>
 		</div>
 	)
