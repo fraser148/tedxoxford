@@ -18,7 +18,7 @@ class Event extends React.Component {
               <p className="location">{this.props.location}</p>
               <p className="origin">{this.props.origin}</p>
               <p className="person">{this.props.person}</p>
-              <span className="find-more-btn">Find out more</span>
+              <a className="find-more-btn" target="_blank" href="https://www.facebook.com/events/892833398276276?ref=newsfeed" rel="noreferrer"> Find out more</a>
             </div>
           </div>
         </div>

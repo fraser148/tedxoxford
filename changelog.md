@@ -39,3 +39,8 @@ Please keep this up-to-date for subsequent IT Officers.
 - Peculiar anomaly leading to an error on the refresh for the "/speakers" page. The route has been changed to "/speaker" which has solved the problem but I have no idea why. In the browser, when the page was refreshed, it would then append a "/" to the end leading to the url of "/speakers/" leading to a 301 redirect error as if the page was permanently moved.
 - CORS issue in backend, now available to manage domains on whitelist.
 
+## [1.2.3] - 18/10/2021
+
+### Changed
+- Switched the event to visible for G&D's Event promotion. Links to Facebook event.
+

@@ -1,7 +1,6 @@
 import React        from 'react';
 import Header       from './Header.js';
-// import Event        from './Event.js';
-// import eventimg     from './../images/person.png';
+import Event        from './Event.js';
 import Talks        from './Talks.js';
 import NewsletterSU from './NewsletterSU.js';
 import Footer       from './Footer.js';
@@ -62,15 +61,15 @@ class Home extends React.Component {
           <HeaderIMG/>
           <div className="main-container">
             <Intro />
-            {/* <Event
-              image={eventimg}
+            <Event
+              image={"/gandds.jpg"}
               date={"Oct 23, 3pm GMT"}
               title={"G&D's Ice-cream"}
               details={"Come get FREE ice-cream at G&Ds and find out more about this year’s conference and how you can get involved!"}
               location={"G&D's"}
               origin={"St Aldates"}
               person={"Oxford"}
-            /> */}
+            />
           </div>
           <Talks/>
           <NewsletterSU />
