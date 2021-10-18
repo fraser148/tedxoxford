@@ -63,7 +63,7 @@ class Home extends React.Component {
             <Intro />
             <Event
               image={"/gandds.jpg"}
-              date={"Oct 23, 3pm GMT"}
+              date={"Oct 23, 3pm BST"}
               title={"G&D's Ice-cream"}
               details={"Come get FREE ice-cream at G&Ds and find out more about this year’s conference and how you can get involved!"}
               location={"G&D's"}
