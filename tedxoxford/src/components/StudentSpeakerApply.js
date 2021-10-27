@@ -57,7 +57,7 @@ class StudentSpeakerApply extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
 
-        fetch('http://localhost:3001/postSubmission', {
+        fetch('https://www.api.tedxoxford.co.uk/postSubmission', {
             method: "POST",
             headers: {
                 'Content-type': 'application/json'
