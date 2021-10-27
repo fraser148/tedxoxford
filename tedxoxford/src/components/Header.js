@@ -11,6 +11,7 @@ const Header = () => {
 			<div className="links">
 				<Link to='/talks'>TALKS</Link>
 				<Link to='/speaker'>SPEAKERS</Link>
+				<Link to='/student-speaker-application'>APPLY</Link>
 				<Link to='/sponsors'>SPONSORS</Link>
 				<Link to='/committee'>COMMITTEE</Link>
 				<Link to='/about'>ABOUT</Link>

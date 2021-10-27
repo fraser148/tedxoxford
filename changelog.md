@@ -44,3 +44,7 @@ Please keep this up-to-date for subsequent IT Officers.
 ### Changed
 - Switched the event to visible for G&D's Event promotion. Links to Facebook event.
 
+## [1.2.4] - 27/10/2021
+
+### Added
+- Added in the Student Submission form that works with firebase to upload the image for the student.

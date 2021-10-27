@@ -24,6 +24,7 @@
 5 — Pages
 5.1 — Talks
 5.2 - Committee
+5.3 - Student Speaker
 ==============================
 
 
@@ -751,6 +752,83 @@ body {
         box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         border-radius: 5px;
       }
+    }
+  }
+}
+
+/**
+================
+[5.3] STUDENT  #
+================
+**/
+
+.student-apply {
+
+  margin: auto;
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin-bottom: 40px;
+  padding: 20px;
+
+  input, label, select, textarea {
+    display: block;
+    width: 100%;
+    
+  }
+
+  label {
+    margin:0;
+    padding: 12px 0px 2px 0px;
+    position: relative;
+  }
+
+  input, textarea, select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 3px 5px 0px;
+    padding: 5px;
+  }
+
+  textarea {
+    height:120px;
+  }
+
+  .red-dot {
+    width: 8px;
+    height:8px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    background-color: $red;
+    display: inline-block;
+  }
+
+  .red-dot.special {
+    position: absolute;
+    right:0;
+    bottom: 10px;
+  }
+
+  input[type="submit"] {
+    margin-top:20px;
+    background-color: $red;
+    color:white;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  .positive-message {
+    p {
+      margin-top: 25vh;
+      margin-bottom: 25vh;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      background-color:rgb(126, 214, 126);
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(61, 185, 61);
+      padding: 20px;
+      border-radius: 10px;
     }
   }
 }
