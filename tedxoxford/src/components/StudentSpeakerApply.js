@@ -102,9 +102,35 @@ class StudentSpeakerApply extends React.Component {
         <div>
             <div className="main-container">
             <Header />
+            <div className="student-speaker">
+            <h1>Apply to be a Student Speaker</h1>
+            <br/>
+            <h3>
+            Want a chance to speak alongside internationally renowned guests?
+            </h3>
+            <p>
+            TEDxOxford’s student speaker competition <b>is open now!</b> Students from Oxford and Oxford Brookes can have the chance to feature in our upcoming event on Jan 29th, 2022.
+            </p>
+            <h4>What is the theme?</h4>
+            <p>
+            Our theme for this year’s conference is ‘Beyond Frontiers’. It is intentionally open-ended: a frontier can be a physical boundary between places; a frontline of human knowledge; a division between individuals, ideologies, and political systems; and more.
+            </p>
+            <h4>How do I participate?</h4>
+            <p>
+            We are looking for 2 students who are impassioned about their topic. <b><i>No prior speaking experience is required.</i></b>
+            </p>
+            <h4>Your Video</h4>
+            <p>
+              Send in a short video (5 minutes or less) explaining why you would like to participate in TEDxOxford, what idea you would like to share and what inspires you to speak about it.
+            </p>
+            <br/>
+            <hr/>
+            <h4 className="deadline"><span style={{fontWeight: 600}}>DEADLINE:</span> 17th November</h4>
+            <hr/>
             {this.state.submitted === false  && 
             <form className="student-apply" onSubmit={this.handleSubmit}>
-                <p><span className="red-dot"></span>Field is required</p>
+              
+                <p className="field-required"><span className="red-dot"></span>Field is required</p>
 
                 <label>First Name:<span className="red-dot special"></span></label>
                 <input required type="text" value={this.state.firstname} name="firstname" onChange={this.handleChangeFname}/>
@@ -140,6 +166,7 @@ class StudentSpeakerApply extends React.Component {
                 onUploadError={this.handleUploadError}
                 onUploadSuccess={this.handleUploadSuccess}
                 onProgress={this.handleProgress}
+                required
                 />
                 <input type="submit" value="Submit" />
                 
@@ -152,6 +179,8 @@ class StudentSpeakerApply extends React.Component {
                 
             </div>
             
+            </div>
+ 
             
           </div>
           <LayeredWaves/>

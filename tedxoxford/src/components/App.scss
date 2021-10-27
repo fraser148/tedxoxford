@@ -762,19 +762,37 @@ body {
 ================
 **/
 
-.student-apply {
+.student-speaker {
+  display: block;
+  padding: 30px;
 
+  h1 {
+    font-weight: $header-weight;
+    font-size: $header-size;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  .deadline {
+    text-align: center;
+    color: $red;
+    text-shadow: rgba(70, 70, 70, 0.212) 0px 0px 8px;
+  }
+}
+
+.student-apply {
   margin: auto;
   display: block;
   width: 500px;
   max-width: 100%;
   margin-bottom: 40px;
-  padding: 20px;
 
   input, label, select, textarea {
     display: block;
     width: 100%;
-    
+    font-weight: 300;
   }
 
   label {
@@ -792,6 +810,10 @@ body {
 
   textarea {
     height:120px;
+  }
+
+  .field-required {
+    margin:0;
   }
 
   .red-dot {
@@ -819,14 +841,11 @@ body {
 
   .positive-message {
     p {
-      margin-top: 25vh;
-      margin-bottom: 25vh;
       display: block;
       width: 100%;
       max-width: 100%;
-      background-color:rgb(126, 214, 126);
-      color: rgb(255, 255, 255);
-      border: 1px solid rgb(61, 185, 61);
+      background-color:#d4edda;
+      color: #155724;
       padding: 20px;
       border-radius: 10px;
     }
