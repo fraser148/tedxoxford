@@ -3,7 +3,7 @@ import 'firebase/auth'
 import 'firebase/storage'
 
 const config = {
-    apiKey: "AIzaSyAfp3WVs-z_EjbTQHNn1tc4NgXiCHulHW0",
+    apiKey: process.env.APIKEY,
     authDomain: "tedxoxford-96eec.firebaseapp.com",
     projectId: "tedxoxford-96eec",
     storageBucket: "tedxoxford-96eec.appspot.com",
