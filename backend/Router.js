@@ -4,6 +4,9 @@ class Router {
         this.getProfiles(app, db);
         this.getVideos(app, db);
         this.postSubmission(app, db);
+        this.checkReviewer(app,db);
+        this.getApplications(app,db);
+        this.getApplication(app,db);
     }
 
     getProfiles(app, db) {
@@ -79,7 +82,45 @@ class Router {
             });
 
         })
-    }
+    };
+
+    checkReviewer(app, db) {
+        app.get("/check/:id", function(req, res) {
+            db.query('SELECT * FROM reviewers WHERE userID = ? LIMIT 1', [req.params.id], (err, data) => {
+                if (data) {
+                    console.log("here users")
+                    res.json({
+                        data: data
+                    })
+                }
+            });
+        });
+    };
+
+    getApplications(app, db) {
+        app.get("/applicants", function(req, res) {
+            db.query('SELECT * FROM student_speakers ORDER BY DateEntry DESC', [req.params.id], (err, data) => {
+                if (data) {
+                    console.log("here applicants")
+                    res.json({
+                        data: data
+                    })
+                }
+            });
+        });
+    };
+    getApplication(app, db) {
+        app.get("/applicant/:id", function(req, res) {
+            db.query('SELECT * FROM student_speakers WHERE id = ? LIMIT 1', [req.params.id], (err, data) => {
+                if (data) {
+                    console.log("here applicant")
+                    res.json({
+                        data: data
+                    })
+                }
+            });
+        });
+    };
 }
 
 module.exports = Router;

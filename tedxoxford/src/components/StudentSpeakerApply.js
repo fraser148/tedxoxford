@@ -1,8 +1,7 @@
 import React                    from "react";
-import { useForm }              from "react-hook-form";
 import Header                   from './Header.js';
-import LayeredWaves             from './LayeredWaves.js'
-
+import LayeredWaves             from './LayeredWaves.js';
+import { ProgressBar }          from 'react-bootstrap';
 import firebase from "firebase";
 import FileUploader from 'react-firebase-file-uploader';
 // import { Container, Row, Col }  from 'react-bootstrap';
@@ -155,8 +154,9 @@ class StudentSpeakerApply extends React.Component {
                 <textarea required value={this.state.idea} onChange={this.handleChangeIdea}/>
                 
                 <label>Your Video:<span className="red-dot special"></span></label>
-                {this.state.isUploading && <p>Progress: {this.state.progress}</p>}
-                {this.state.avatarURL && <img src={this.state.avatarURL} />}
+                {/* {this.state.isUploading && <p>Progress: {this.state.progress}</p>} */}
+                {this.state.isUploading && <ProgressBar className="file-progress" animated now={this.state.progress} label={`${this.state.progress}%`} />}
+                {this.state.avatarURL && <img src={this.state.avatarURL} alt={"file"}/>}
                 <FileUploader
                 accept="video/*"
                 name="avatar"
@@ -175,13 +175,9 @@ class StudentSpeakerApply extends React.Component {
             <div className="student-apply">
                 <div className="positive-message">
                 {this.state.message && <p> {this.state.message}</p>}
-                </div>
-                
+                </div>  
             </div>
-            
             </div>
- 
-            
           </div>
           <LayeredWaves/>
         </div>

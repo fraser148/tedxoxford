@@ -48,3 +48,8 @@ Please keep this up-to-date for subsequent IT Officers.
 
 ### Added
 - Added in the Student Submission form that works with firebase to upload the image for the student.
+
+## [1.3.0] - Applicant Review Area - 19/11/2021
+
+### Added
+- Major addition of applicant review with Google Signin managed by Firebase. Applicant details and videos are listed in hidden admin area.
