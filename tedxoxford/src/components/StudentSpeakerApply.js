@@ -2,7 +2,8 @@ import React                    from "react";
 import Header                   from './Header.js';
 import LayeredWaves             from './LayeredWaves.js';
 import { ProgressBar }          from 'react-bootstrap';
-import firebase from "firebase";
+import { storage }              from "../services/firebase";
+import { ref }                  from "firebase/storage";
 import FileUploader from 'react-firebase-file-uploader';
 // import { Container, Row, Col }  from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -88,12 +89,6 @@ class StudentSpeakerApply extends React.Component {
 
     handleUploadSuccess = filename => {
       this.setState({ avatar: filename, progress: 100, isUploading: false });
-      firebase
-        .storage()
-        .ref("speaker-vids")
-        .child(filename)
-        .getDownloadURL()
-        .then(url => this.setState({ avatarURL: url }));
     };
    
     render() {
@@ -161,7 +156,7 @@ class StudentSpeakerApply extends React.Component {
                 accept="video/*"
                 name="avatar"
                 filename={this.state.firstname + "|" + this.state.email + "|" + this.state.id}
-                storageRef={firebase.storage().ref("speaker-vids")}
+                storageRef={ref(ref(storage), "speaker-vids")}
                 onUploadStart={this.handleUploadStart}
                 onUploadError={this.handleUploadError}
                 onUploadSuccess={this.handleUploadSuccess}

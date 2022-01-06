@@ -46,19 +46,9 @@ function Allowed({user}) {
     )
 }
 
-const Applicants = ({ user, permission }) => {
-    console.log(permission)
-    if (permission > 0) {
-        return <Allowed user={user}/>;
-    } else {
-        return (
-            <div className="applicants">
-              <h1>Hello, <span></span>{user.displayName}</h1>
-              <img src={user.photoURL} alt="" />
-              <button className="button signout" onClick={() => auth.signOut()}>Sign out</button>
-            </div>
-          )
-    }
+const Applicants = ({ user }) => {
+    return <Allowed user={user}/>;
+
   
 }
 

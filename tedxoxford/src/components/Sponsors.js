@@ -32,7 +32,7 @@ class Sponsors extends React.Component {
                             </Col>
                             <Col sm={12} className="sponsors-content">
                                 <h2 className="need-sponsors">
-                                    We are currently seeking sponsors for our TEDxOxford 2022 Event. Please contact out sponsorship team for more information!
+                                    We are currently seeking sponsors for our TEDxOxford 2022 Event. Please contact our sponsorship team for more information!
                                 </h2>
                                 <a href={"mailto:sponsorship@tedxoxford.co.uk"} className="sponsor-button">BECOME A SPONSOR</a>
                             </Col>

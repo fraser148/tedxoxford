@@ -1,11 +1,10 @@
 import React, { useState, useEffect }   from 'react';
 import { useParams }                    from 'react-router-dom';
 import { checkUser,getApplicant }       from '../../services/user';
-import {storage}                        from '../../services/firebase'
+import { storage }                      from '../../services/firebase'
+import { onAuthStateChanged }           from "firebase/auth";
+import { auth }                         from "../../services/firebase";
 import moment                           from 'moment'
-import firebase                         from 'firebase'
-import                                       'firebase/auth';
-import                                       'firebase/storage';
 
 function Uni(uni) {
     if (uni === "oxford") {
@@ -89,7 +88,7 @@ function Applicant() {
     const [permissions, setPermissions] = useState(0)
 
     useEffect(() => {
-        firebase.auth().onAuthStateChanged(user => {
+        onAuthStateChanged(auth, (user) => {
             setUser(user);
             setPermissions(0);
             checkUser(user.uid)

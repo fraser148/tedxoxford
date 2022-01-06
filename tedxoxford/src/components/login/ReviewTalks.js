@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import firebase         from 'firebase'
-import                       'firebase/auth';
+import {  onAuthStateChanged } from "firebase/auth";
+import { auth } from "../../services/firebase";
 import Login            from './Login'
 import Applicants       from './Applicants'
-import { checkUser }    from '../../services/user';
+// import { checkUser }    from '../../services/user';
 
 
 function ReviewTalks() {
     const [user, setUser] = useState(null);
-    const [permissions, setPermissions] = useState(0)
+    // const [permissions, setPermissions] = useState(0)
 
     useEffect(() => {
-        firebase.auth().onAuthStateChanged(user => {
+        onAuthStateChanged(auth, (user) => {
             setUser(user);
-            setPermissions(0);
-            checkUser(user.uid)
-                .then(data => {
-                    console.log(data)
-                    if (data.data.length > 0 ) {
-                        console.log(data)
-                        setPermissions(data.data[0]['permissions'])
-                    }
-                })
+            // setPermissions(0);
+            // checkUser(user.uid)
+            //     .then(data => {
+            //         console.log(data)
+            //         if (data.data.length > 0 ) {
+            //             console.log(data)
+            //             setPermissions(data.data[0]['permissions'])
+            //         }
+            //     })
             })
         
         
@@ -31,7 +31,7 @@ function ReviewTalks() {
 
     return (
         <div>
-            {user ? <Applicants user={user} permission={permissions} /> : <Login/>}
+            {user ? <Applicants user={user} /> : <Login/>}
         </div>
     )
 }
