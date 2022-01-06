@@ -1,6 +1,6 @@
 import React        from 'react';
 import Header       from './Header.js';
-import Event        from './Event.js';
+// import Event        from './Event.js';
 import TEDtitle     from './TEDtitle.js';
 import Talks        from './Talks.js';
 import NewsletterSU from './NewsletterSU.js';

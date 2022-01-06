@@ -53,3 +53,8 @@ Please keep this up-to-date for subsequent IT Officers.
 
 ### Added
 - Major addition of applicant review with Google Signin managed by Firebase. Applicant details and videos are listed in hidden admin area.
+
+## [1.3.1] - General Updates Ahead of Event - 06/01/2022
+
+### Added
+- FAQ Page
