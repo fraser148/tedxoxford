@@ -13,12 +13,14 @@
 2 — Layout
 2.1 — Navbar
 2.2 — Menu
+2.3 - FAQs
 3 — Small Components
 3.1 — Events
 3.2 - Talks
 3.3 - Newsletter
 3.4 - Footer
 3.5 - Profile
+3.6 - General Page
 4 — Micro Components
 4.1 - Ted Title (Classic)
 5 — Pages
@@ -332,6 +334,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
+/**
+============
+[2.3] FAQ  #
+============
+**/
+
 .accordion {
   max-width: 600px;
   margin: 2rem auto;
@@ -377,6 +385,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-weight: 300;
   }
 }
+
+
 
 /**
 ===============
@@ -691,6 +701,58 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-weight: 300;
   }
 
+}
+
+/**
+==================
+[3.6] General Page  #
+==================
+**/
+
+.general {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  font-weight: 600;;
+}
+
+.accordion-title:hover {
+  background-color: $red;
+  color: white;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  transition: ease-in-out .2s;
+  border-bottom: 1px solid black;
+}
+
+
+.detail-home {
+  padding: 0px 30px;
+  width: 100%;
+  max-width:100%;
+  background-color: black;
+  color: white;
+  margin:40px 0px;
+
+  .content {
+    padding: 50px;
+    font-weight: 300;
+  }
 }
 
 /**

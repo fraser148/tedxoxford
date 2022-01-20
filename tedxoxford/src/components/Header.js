@@ -14,10 +14,10 @@ class Header extends React.Component {
 				<Menu className="bg-styling">
 					<Link to='/talks'>TALKS</Link>
 					<Link to='/speaker'>SPEAKERS</Link>
-					<Link to='/student-speaker-application'>APPLY</Link>
 					<Link to='/sponsors'>SPONSORS</Link>
 					<Link to='/committee'>COMMITTEE</Link>
 					<Link to='/about'>ABOUT</Link>
+					<Link to='/faq'>FAQ</Link>
 					<a className='join-news' target="_blank" rel="noreferrer" href='https://tickets.tedxoxford.co.uk'>BUY TICKETS</a>
 				</Menu>
 				<div className="links">

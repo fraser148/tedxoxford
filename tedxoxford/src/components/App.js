@@ -9,6 +9,7 @@ import Committee          from './Committee.js';
 import About              from './About.js';
 import Sponsors           from './Sponsors.js';
 import FAQ                from './FAQ.js'
+import RefundPolicy       from './RefundPolicy.js';
 import ReviewTalks        from './login/ReviewTalks.js';
 import Applicant          from './login/Applicant.js'
 import StudentSpeakerApply           from './StudentSpeakerApply.js';
@@ -37,6 +38,7 @@ class App extends React.Component {
           <Route exact path="/about" component={About}/>
           <Route exact path="/sponsors" component={Sponsors}/>
           <Route exact path="/faq" component={FAQ}/>
+          <Route exact path="/refund-policy" component={RefundPolicy}/>
           {/* <Route exact path="/view-applicants" component={ReviewTalks}/>
           <Route path="/applicant/:id" component={Applicant}/>
           <Route exact path="/student-speaker-application" component={StudentSpeakerApply}/> */}

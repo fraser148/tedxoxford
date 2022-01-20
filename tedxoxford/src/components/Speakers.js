@@ -66,24 +66,23 @@ class Speakers extends React.Component {
                         </Col>
                         <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
                             <div className="speaker-img">
-                                <img src={"/speakers/Shubham-Sarraff.jpeg"} alt="Shubham Sarraff"/>
+                                <img src={"/speakers/Shubham-Saraff.jpeg"} alt="Shubham Saraff"/>
                                 <div className="shadow-overlay"></div>
                             </div>
                         </Col>
                         <Col sm={12} md={9} lg={8} xl={6} className="speakers-col details">
                             <div className="speaker-details">
-                                <h1>Shubham Sarraff</h1>
+                                <h1>Shubham Saraff</h1>
                                 <p>
-                                A Tech Entrepreneur, Researcher and Advisor - Shubham is a founder of
-                                two Startups, an AI based Therapeutics Platform and the other a Women
-                                Safety ecosystem based on crime analytics. He won the IET Global award
-                                for his unique research on Mirror Neurons therapy for Stuttering. A
-                                licensed scuba diver, he loves to deep dive on a wide array of subjects
-                                ranging from Neural Networks, Parallel Computing, Latent fingerprints and
-                                Tech-Convergence. He is one of the youngest advisors to VC funds and Fintech
-                                companies on Digital Transformation. A Speaker and moderator on Topics of
-                                emerging technologies at various Universities &amp; Management Institutes,
-                                he is a TEDx speaker on Artificial Intelligence.
+                                A Tech Entrepreneur, Researcher and Advisor - Shubham is a founder of two
+                                Startups, an AI based Therapeutics Platform and the other a Women Safety
+                                ecosystem based on crime analytics. He won the IET Global award for his
+                                unique research on Mirror Neurons therapy for Stuttering. He is a Tech-advisor
+                                to CIOs of  VC funds and CEOs of leading companies, on Future ready Technologies.
+                                He has been a TEDx speaker on Artificial Intelligence and at TEDxOxford, he
+                                shall be speaking about why Industry leaders must increase the quotient of
+                                Collective Human Connectedness with a Human Centric approach in all their
+                                NxtGen Product designs, while navigating the Hi-Tech maze.
                                 </p>
                             </div>
                         </Col>

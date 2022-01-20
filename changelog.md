@@ -57,4 +57,9 @@ Please keep this up-to-date for subsequent IT Officers.
 ## [1.3.1] - General Updates Ahead of Event - 06/01/2022
 
 ### Added
-- FAQ Page
+- FAQ Page.
+
+## [1.3.2] - Adding a Refund Policy
+
+### Added
+- Refund Policy page added.

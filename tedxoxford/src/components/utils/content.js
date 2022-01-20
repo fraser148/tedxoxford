@@ -18,12 +18,16 @@ export const accordionData = [
     {
         title: 'What will the schedule be like on the day?',
         content: `The conference will begin at 9am and end at 5pm with an hour of intermission at
-        12pm. Pre-dinner drink will commence at 7pm if your ticket includes the dinner.`
+        12pm. Pre-dinner drinks will commence at 6:30pm if your ticket includes the dinner.`
     },
     {
         title: 'Will there be food?',
         content: `There will be some light refreshments and snacks provided but there are also shops
         and restaurants in the immediate vicinity of the Town Hall. There will be a break for lunch.`
+    },
+    {
+        title: "What is your refund policy?",
+        content: "You can find our refund policy <a href='/refund-policy'>here</a>."
     },
     {
         title: 'What is the Covid policy? Do we need Covid Passport for entry?',
