@@ -63,3 +63,6 @@ Please keep this up-to-date for subsequent IT Officers.
 
 ### Added
 - Refund Policy page added.
+
+## [1.3.3] - Schedule Page
+- Added the schedule page with dropdowns with additional speaker information. This allows a more dynamic reading that a simple pdf.
