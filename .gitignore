@@ -21,6 +21,7 @@ tedxoxford/.env.local
 tedxoxford/.env.development.local
 tedxoxford/.env.test.local
 tedxoxford/.env.production.local
+tedxoxford/.env
 
 tedxoxford/npm-debug.log*
 tedxoxford/yarn-debug.log*

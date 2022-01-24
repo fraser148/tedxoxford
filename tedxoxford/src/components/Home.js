@@ -1,6 +1,7 @@
 import React        from 'react';
 import Header       from './Header.js';
-import Event        from './Event.js';
+// import Event        from './Event.js';
+import TEDtitle     from './TEDtitle.js';
 import Talks        from './Talks.js';
 import NewsletterSU from './NewsletterSU.js';
 import Footer       from './Footer.js';
@@ -40,7 +41,10 @@ const Intro = () => {
             aims to cross boundaries and connect disciplines.
             TEDxOxford 2022: join the conversation.
           </p>
+          
+          
         </Col>
+
         {/* <Col sm={12} md={5} className="artwork">
           <img src={"./logo-final.png"} alt='Filler artwork'/>
         </Col> */}
@@ -49,6 +53,31 @@ const Intro = () => {
     </Container>
   );
 };
+
+const Details = () => {
+  return (
+    <Container className="detail-home">
+      <Row>
+        <Col lg={6} className="content">
+          <TEDtitle first={"THE"} second={"CONFERENCE"} />
+          <p>
+          The conference is an event featuring high-profile speakers from all across the globe as they tell their stories of "Beyond Frontiers". From founders of space technology companies to individuals who've escaped North Korea, check out our seperate speaker announcement posts on our page for more information about all our speakers.
+          </p>
+        </Col>
+        <Col lg={6} className="content">
+          <TEDtitle first={"THE"} second={"DINNER"} />
+          <p>
+          Held in Oriel College, Oxford, the black tie dinner will be attended by both the TEDxOxford Committee and the wonderful speakers which you will have seen throughout the day. It will provide a great opportunity to ask further questions and chat with the speakers and committee alike, as well as enjoy an incredible atmosphere and a 3-course meal in one of Oxford’s most beautiful dining halls.
+          <br/><br/>
+          Before the black tie dinner, there will be a champagne reception. This will provide an opportunity to chat with all the speakers and attendees alike, whereas during the meal, the speakers will be interspersed amongst the attendees and will rotate positions, providing an opportunity to have more in-depth conversations.
+          <br/><br/>
+          As such, the dinner is sure to allow you to connect with like-minded individuals, get to know the speakers more and enjoy an amazing evening experience after what promises to be a fantastic conference throughout the day.
+          </p>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
 
 class Home extends React.Component {
 
@@ -61,7 +90,11 @@ class Home extends React.Component {
           <HeaderIMG/>
           <div className="main-container">
             <Intro />
-            <Event
+          </div>
+          
+            <Details />
+            <div className="main-container">
+            {/* <Event
               image={"/gandds.jpg"}
               date={"Oct 23, 3pm BST"}
               title={"G&D's Ice-cream"}
@@ -69,7 +102,7 @@ class Home extends React.Component {
               location={"G&D's"}
               origin={"St Aldates"}
               person={"Oxford"}
-            />
+            /> */}
           </div>
           <Talks/>
           <NewsletterSU />

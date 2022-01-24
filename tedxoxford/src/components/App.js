@@ -8,12 +8,24 @@ import TalksPage          from './TalksPage.js';
 import Committee          from './Committee.js';
 import About              from './About.js';
 import Sponsors           from './Sponsors.js';
+import FAQ                from './FAQ.js'
+import RefundPolicy       from './RefundPolicy.js';
+import Schedule           from './Schedule.js';
+import ReviewTalks        from './login/ReviewTalks.js';
+import Applicant          from './login/Applicant.js'
+import StudentSpeakerApply           from './StudentSpeakerApply.js';
 import './App.scss';
 import ReactGA from 'react-ga';
+
+
+
+
 ReactGA.initialize('UA-201249248-1', {
   siteSpeedSampleRate: 100
 });
 ReactGA.pageview(window.location.pathname + window.location.search);
+
+
 
 class App extends React.Component {
   render() {
@@ -26,6 +38,12 @@ class App extends React.Component {
           <Route exact path="/committee" component={Committee}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/sponsors" component={Sponsors}/>
+          <Route exact path="/faq" component={FAQ}/>
+          <Route exact path="/refund-policy" component={RefundPolicy}/>
+          <Route exact path="/schedule" component={Schedule}/>
+          {/* <Route exact path="/view-applicants" component={ReviewTalks}/>
+          <Route path="/applicant/:id" component={Applicant}/>
+          <Route exact path="/student-speaker-application" component={StudentSpeakerApply}/> */}
         </Switch>
       </Router>
     )

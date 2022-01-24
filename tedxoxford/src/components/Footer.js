@@ -17,7 +17,8 @@ class Talks extends React.Component {
                 <SocialIcon className="social-icon" url="https://www.instagram.com/tedxoxford/" />
             </div>
             <div className="footer-license">
-              <span>This independent TEDx event is operated under license from TED</span>
+              <span>This independent TEDx event is operated under license from TED</span><br/><br/>
+              <span>Email: <a href="mailto:contact@tedxoxford.co.uk">contact@tedxoxford.co.uk</a></span>
             </div>
         </div>
         

@@ -13,17 +13,21 @@
 2 — Layout
 2.1 — Navbar
 2.2 — Menu
+2.3 - FAQs
+2.4 - Schedule
 3 — Small Components
 3.1 — Events
 3.2 - Talks
 3.3 - Newsletter
 3.4 - Footer
 3.5 - Profile
+3.6 - General Page
 4 — Micro Components
 4.1 - Ted Title (Classic)
 5 — Pages
 5.1 — Talks
 5.2 - Committee
+5.3 - Student Speaker
 ==============================
 
 
@@ -61,8 +65,11 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
   margin: 20px 0px;
+  z-index: 100;
+
 
   img {
     height: 30px;
@@ -76,6 +83,14 @@ body {
     font-weight: 300;
     transition: ease-in-out 0.3s;
     display: inline-block;
+    position: relative;
+    z-index: 100;
+  }
+
+  .links {
+    display:none;
+    position: relative;
+    z-index: 1000;
   }
 
   .links a:hover {
@@ -99,7 +114,141 @@ body {
       color: white;
     }
   }
+  .dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    z-index: 100;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
+
+.bg-styling {
+  a {
+    color:white;
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  left:0;
+  top:0;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  position: fixed;
+  left:0;
+  top:0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 950px) {
+  .navbar .links {
+    display: block;
+  }
+
+  .bm-burger-button {
+    display: none;
+  }
+
+}
+@media (max-width: 949px) {
+  .navbar .links {
+    display: none;
+  }
+
+  .bm-burger-button {
+    display: block;
+  }
+}
+
 
 /**
 ==============
@@ -185,6 +334,134 @@ body {
     }
   }
 }
+
+/**
+============
+[2.3] FAQ  #
+============
+**/
+
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  font-weight: 600;;
+}
+
+.accordion-title:hover {
+  background-color: $red;
+  color: white;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  transition: ease-in-out .2s;
+  border-bottom: 1px solid black;
+}
+
+
+.detail-home {
+  padding: 0px 30px;
+  width: 100%;
+  max-width:100%;
+  background-color: black;
+  color: white;
+  margin:40px 0px;
+
+  .content {
+    padding: 50px;
+    font-weight: 300;
+  }
+}
+
+
+/**
+=================
+[2.4] SCHEDULE  #
+=================
+**/
+
+
+.schedule {
+  max-width: 800px;
+  margin: 2rem auto;
+  margin-bottom: 50px;
+  .schedule-item {
+    display: flex;
+    margin: 14px 10px;
+    line-height: 16px;
+    
+    &.speaker-hover {
+      cursor: pointer;
+    }
+    
+
+        
+
+    .time {
+      width: 80px;
+      flex-shrink: 0;
+    }
+
+    .details {
+
+
+      .speaker {
+        font-weight: 600;
+      }
+
+      .speaker-content {
+        display: flex;
+
+        .speaker-col {
+          padding: 0 !important;
+        }
+
+        .speaker-img {
+          flex: 1;
+          padding: 10px;
+          
+          img {
+            max-width: 100%;
+            filter: grayscale(100%);
+            border-radius: 5px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          }
+        }
+
+        .speaker-desc {
+          flex: 1;
+          margin: 10px;
+          padding: 14px;
+          border-radius: 5px;
+          line-height: normal;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          border: solid 0.5px #ccc;
+        }
+      }
+
+      .title {
+        &.talker {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
 
 /**
 ===============
@@ -503,6 +780,58 @@ body {
 
 /**
 ==================
+[3.6] General Page  #
+==================
+**/
+
+.general {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  font-weight: 600;;
+}
+
+.accordion-title:hover {
+  background-color: $red;
+  color: white;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  transition: ease-in-out .2s;
+  border-bottom: 1px solid black;
+}
+
+
+.detail-home {
+  padding: 0px 30px;
+  width: 100%;
+  max-width:100%;
+  background-color: black;
+  color: white;
+  margin:40px 0px;
+
+  .content {
+    padding: 50px;
+    font-weight: 300;
+  }
+}
+
+/**
+==================
 [4.1] TED TITLE  #
 ==================
 **/
@@ -752,5 +1081,212 @@ body {
         border-radius: 5px;
       }
     }
+  }
+}
+
+/**
+================
+[5.3] STUDENT  #
+================
+**/
+
+.student-speaker {
+  display: block;
+  padding: 30px;
+
+  h1 {
+    font-weight: $header-weight;
+    font-size: $header-size;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  .deadline {
+    text-align: center;
+    color: $red;
+    text-shadow: rgba(70, 70, 70, 0.212) 0px 0px 8px;
+  }
+}
+
+.student-apply {
+  margin: auto;
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin-bottom: 40px;
+
+  input, label, select, textarea {
+    display: block;
+    width: 100%;
+    font-weight: 300;
+  }
+
+  label {
+    margin:0;
+    padding: 12px 0px 2px 0px;
+    position: relative;
+  }
+
+  input, textarea, select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 3px 5px 0px;
+    padding: 5px;
+  }
+
+  textarea {
+    height:120px;
+  }
+
+  .field-required {
+    margin:0;
+  }
+
+  .red-dot {
+    width: 8px;
+    height:8px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    background-color: $red;
+    display: inline-block;
+  }
+
+  .red-dot.special {
+    position: absolute;
+    right:0;
+    bottom: 10px;
+  }
+
+  .file-progress {
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    margin-top:20px;
+    background-color: $red;
+    color:white;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  .positive-message {
+    p {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      background-color:#d4edda;
+      color: #155724;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+
+.applicants {
+  margin: 0px;
+  padding: 20px;
+
+  h1 {
+    color: $heading-blue;
+    font-weight: $header-weight;
+  }
+
+  h2 {
+    font-weight: 200;;
+  }
+
+  .button.signout {
+    position: absolute;
+    top: 30px;
+    right:30px;
+  }
+
+  .applicant-holder {
+    
+    width: 100%;
+    max-width:800px;
+
+    .applicant {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #d9e4eb;
+      color:rgb(19, 19, 19);
+      border-radius: 20px;
+      margin: 10px 0px;
+      padding: 20px;
+
+      .details {
+        .name, a {
+          color: $heading-blue;
+        }
+
+        .uni {
+          text-transform: capitalize;
+        }
+      }
+
+      .view {
+        padding: 0px 20px;
+
+        a {
+          display: inline-block;
+          color: white;
+          background-color: $red;
+          padding: 10px 25px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+.applicant-page {
+  padding: 20px;
+
+  h2, h3 {
+    color: $heading-blue;
+    font-weight: $header-weight;
+    margin:0;
+  }
+
+  .basic-details {
+    margin-bottom: 40px;
+    a {
+      display: inline-block;
+      color: white;
+      background-color: #7587EC;
+      border: 3px solid #7587EC;
+      padding: 10px 25px;
+      border-radius: 80px;
+      margin: 10px 20px 10px 0px
+    }
+
+    .video {
+      background-color: white;
+      color: #7587EC;
+      border: 3px solid #7587EC;
+    }
+
+    .uni, .time {
+      display: block;
+      color: rgb(136, 136, 136);
+      text-transform: capitalize;
+    }
+
+    .time {
+      margin-bottom: 20px;
+    }
+  }
+
+  .answers {
+    display: block;
+    width: 800px;
+    max-width: 100%;
   }
 }

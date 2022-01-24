@@ -25,6 +25,69 @@ class Speakers extends React.Component {
                         </Col>
                         <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
                             <div className="speaker-img">
+                                <img src={"/speakers/Emily-Luo.jpg"} alt="Emily Luo"/>
+                                <div className="shadow-overlay"></div>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col details">
+                            <div className="speaker-details">
+                                <h1>Emily Luo</h1>
+                                <p>
+                                Emily Luo was born and raised in Denmark, now studying English at
+                                Exeter College, Oxford. Her talk is dedicated to her parents who
+                                came to Denmark in the 1990s. They each grew up in poverty,
+                                her mom during the Chinese cultural revolution and her dad during
+                                the Iranian revolution. Emily will speak about the life lessons
+                                they have taught her, and how their hardships have changed the
+                                way she approaches life for the better.
+                                </p>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
+                            <div className="speaker-img">
+                                <img src={"/speakers/Mark-Bissell.jpeg"} alt="Mark Bissell"/>
+                                <div className="shadow-overlay"></div>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col details">
+                            <div className="speaker-details">
+                                <h1>Mark Bissell</h1>
+                                <p>
+                                It's getting harder to innovate. In every field of study, the
+                                frontier of knowledge is as far out as it's even been. With the
+                                low-hanging fruit already picked, innovators are finding it more
+                                and more burdensome to reach this frontier and push it further.
+                                In this talk, Mark explores the implications of the expanding knowledge
+                                frontier and explains why there is reason to be hopeful: there are
+                                many unexploited opportunities for humanity to study and improve our
+                                ability to systematically create progress.
+                                </p>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
+                            <div className="speaker-img">
+                                <img src={"/speakers/Shubham-Saraff.jpeg"} alt="Shubham Saraff"/>
+                                <div className="shadow-overlay"></div>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col details">
+                            <div className="speaker-details">
+                                <h1>Shubham Saraff</h1>
+                                <p>
+                                A Tech Entrepreneur, Researcher and Advisor - Shubham is a founder of two
+                                Startups, an AI based Therapeutics Platform and the other a Women Safety
+                                ecosystem based on crime analytics. He won the IET Global award for his
+                                unique research on Mirror Neurons therapy for Stuttering. He is a Tech-advisor
+                                to CIOs of  VC funds and CEOs of leading companies, on Future ready Technologies.
+                                He has been a TEDx speaker on Artificial Intelligence and at TEDxOxford, he
+                                shall be speaking about why Industry leaders must increase the quotient of
+                                Collective Human Connectedness with a Human Centric approach in all their
+                                NxtGen Product designs, while navigating the Hi-Tech maze.
+                                </p>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={9} lg={8} xl={6} className="speakers-col img">
+                            <div className="speaker-img">
                                 <img src={"/speakers/Danielle-Brown.jpg"} alt="Danielle Brown"/>
                                 <div className="shadow-overlay"></div>
                             </div>
@@ -38,7 +101,11 @@ class Speakers extends React.Component {
                                 in Jiu-jitsu Nathan Kai.<br/>
                                 Danielle is a double Paralympic gold medallist, five times World
                                 Champion and the first disabled person to represent England at the
-                                Commonwealth Games (and win gold) as an able-bodied athlete. 
+                                Commonwealth Games (and win gold) as an able-bodied athlete. Nathan
+                                joined MENSA in 2016, is a Grade 5 pianist, and at the age of 7 began
+                                writing Be Your Best Self. In 2017, he became the World's Youngest
+                                Self-Development Author for his book Be Your Best Self: Life Skills
+                                for Unstoppable Kids.
                                 </p>
                             </div>
                         </Col>
