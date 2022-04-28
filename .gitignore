@@ -14,6 +14,7 @@ tedxoxford/coverage
 # production
 tedxoxford/build
 tedxoxford/build.zip
+tedxoxford/build (2).zip
 
 # misc
 tedxoxford/.DS_Store
@@ -33,3 +34,8 @@ tedxoxford/amplify-backup
 tedxoxford/.gitignoreold
 
 generator.py
+
+Google.png
+scanning.py
+TEDxOxford-Conference-2022-attendees.csv
+TEDxOxford-Conference-2022-attendees.xlsx

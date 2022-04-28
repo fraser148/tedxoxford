@@ -12,6 +12,7 @@ class Header extends React.Component {
 					<Link to='/'><img src={logo} alt='Logo' /></Link>
 				</div>
 				<Menu className="bg-styling">
+					<Link to='/schedule'>SCHEDULE</Link>
 					<Link to='/talks'>TALKS</Link>
 					<Link to='/speaker'>SPEAKERS</Link>
 					<Link to='/sponsors'>SPONSORS</Link>
@@ -21,6 +22,7 @@ class Header extends React.Component {
 					<a className='join-news' target="_blank" rel="noreferrer" href='https://tickets.tedxoxford.co.uk'>BUY TICKETS</a>
 				</Menu>
 				<div className="links">
+					<Link to='/schedule'>SCHEDULE</Link>
 					<Link to='/talks'>TALKS</Link>
 					<Link to='/speaker'>SPEAKERS</Link>
 					<Link to='/faq'>FAQ</Link>
@@ -33,7 +35,7 @@ class Header extends React.Component {
 						</div>
 					</div> */}
 					{/* <Link to='/student-speaker-application'>APPLY</Link> */}
-					<Link to='/sponsors'>SPONSORS</Link>
+					{/* <Link to='/sponsors'>SPONSORS</Link> */}
 					<Link to='/committee'>COMMITTEE</Link>
 					<Link to='/about'>ABOUT</Link>
 					<a className='join-news' target="_blank" rel="noreferrer" href='https://tickets.tedxoxford.co.uk'>BUY TICKETS</a>

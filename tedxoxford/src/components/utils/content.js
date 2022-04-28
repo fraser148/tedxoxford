@@ -47,20 +47,25 @@ export const accordionData = [
 export const lineup = [
     {
         type: "event",
+        time: "8:00",
+        title: "Doors Open"
+    },
+    {
+        type: "event",
         time: "9:00",
         title: "Welcome"
     },
     {
         type: "talk",
-        time: "9:30",
+        time: "9:15",
         speaker: "Ash Dove-Jay",
-        title: "Humanity Has Two Futures - and We are the Aribiters",
+        title: "Humanity Has Two Futures - and We are the Arbiters",
         image: "/speakers/Ash-Dove-Jay.jpg",
         description: "Ash Dove-Jay is the founder and CEO of a space technology company, Orbital Astronautics. He has a PhD in Aerospace Engineering, builds cutting-edge spacecraft, and has led various Mars-focused NASA and ESA analogue astronaut missions in high-altitude deserts."
     },
     {
         type:"talk",
-        time: "10:00",
+        time: "9:35",
         speaker: "Julia Ebner",
         title: "Why We No Longer Get Along",
         image: "/speakers/Julia-Ebner.jpg",
@@ -68,7 +73,7 @@ export const lineup = [
     },
     {
         type:"talk",
-        time: "10:30",
+        time: "10:10",
         speaker: "Be Your Best Self",
         title: "Seeing the World in a Different Way",
         image: "/speakers/Danielle-Brown.jpg",
@@ -76,7 +81,7 @@ export const lineup = [
     },
     {
         type: "talk",
-        time: "11:00",
+        time: "10:30",
         speaker: "Shubham Saraff",
         title: "Why Your Next Product Should Focus on Collective Human Connectedness",
         image: "/speakers/Shubham-Saraff.jpeg",
@@ -84,9 +89,17 @@ export const lineup = [
     },
     {
         type: "talk",
-        time: "11:30",
+        time: "11:05",
+        speaker: "Russ Tucker",
+        title: "Save the Planet. Eat Meat.",
+        image: "/speakers/Russ-Tucker.jpg",
+        description: "Russ is the son of a butcher. His family has a long history of rearing animals and selling meat in the UK. Although you won’t find him behind a counter with a cleaver, he still thinks of himself as following in his family’s footsteps with Ivy Farm Technologies, a food tech company creating the future of meat. Russ is an engineer, having studied at Loughborough University before completing a PhD in biomedical engineering at Oxford University. "
+    },
+    {
+        type: "talk",
+        time: "11:25",
         speaker: "Maya Foa",
-        title: "[Title tbc]",
+        title: "The Problem with ‘ISIS Brides’",
         image: "/speakers/Maya-Foa.jpg",
         description: "Maya Foa leads a team of lawyers fighting against grave human rights abuses. Reprieve saves the lives of people on death rows around the world and secures justice for the victims of torture, rendition, extrajudicial imprisonment and unlawful drone strikes."
     },
@@ -102,15 +115,7 @@ export const lineup = [
     },
     {
         type: "talk",
-        time: "13:10",
-        speaker: "Russ Tucker",
-        title: "Save the Planet. Eat Meat.",
-        image: "/speakers/Russ-Tucker.jpg",
-        description: "Russ is the son of a butcher. His family has a long history of rearing animals and selling meat in the UK. Although you won’t find him behind a counter with a cleaver, he still thinks of himself as following in his family’s footsteps with Ivy Farm Technologies, a food tech company creating the future of meat. Russ is an engineer, having studied at Loughborough University before completing a PhD in biomedical engineering at Oxford University. "
-    },
-    {
-        type: "talk",
-        time: "13:40",
+        time: "13:15",
         speaker: "Jason Bevan",
         title: "Rocketfuel your Creativity: Insider Secrets From the Big Movies and Their Makers",
         image: "/speakers/Jason-Bevan.jpg",
@@ -118,7 +123,7 @@ export const lineup = [
     },
     {
         type: "talk",
-        time: "14:10",
+        time: "13:35",
         speaker: "Anja Meinhardt",
         title: "Justice in Motion: A Movement to Move You",
         image: "/speakers/Anja-Meinhardt-using.jpg",
@@ -126,7 +131,7 @@ export const lineup = [
     },
     {
         type: "talk",
-        time: "14:40",
+        time: "14:10",
         speaker: "Ji Hyun Park",
         title: "Escaping the Brutal Socialist Regime",
         image: "/speakers/Jihyun-Park.jpg",
@@ -134,12 +139,12 @@ export const lineup = [
     },
     {
         type: "event",
-        time: "15:10",
+        time: "14:30",
         title: "Intermission"
     },
     {
         type: "talk",
-        time: "15:30",
+        time: "15:00",
         speaker: "Mark Bissell",
         title: "Innovation, Stagnation, and Progress Studies: Overcoming the Expanding Knowledge Frontier",
         image: "/speakers/Mark-Bissell.jpeg",
@@ -147,7 +152,7 @@ export const lineup = [
     },
     {
         type: "talk",
-        time: "16:00",
+        time: "15:30",
         speaker: "Emily Luo",
         title: "What My Immigrant Parents Taught Me About Life",
         image: "/speakers/Emily-Luo.jpg",
@@ -155,7 +160,7 @@ export const lineup = [
     },
     {
         type: "talk",
-        time: "16:30",
+        time: "16:00",
         speaker: "Stephen Venables",
         title: "Everest and Beyond",
         image: "/speakers/Stephen-Venables.jpg",
@@ -163,7 +168,26 @@ export const lineup = [
     },
     {
         type: "event",
-        time: "17:00",
+        time: "16:30",
         title: "End of Conference"
     }
+];
+
+
+export const dinner = [
+    {
+        type: "event",
+        time: "18:30",
+        title: "Drinks Reception"
+    },
+    {
+        type: "event",
+        time: "19:00",
+        title: "Dinner"
+    },
+    {
+        type: "event",
+        time: "23:30",
+        title: "Carriages"
+    },
 ]

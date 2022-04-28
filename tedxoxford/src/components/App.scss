@@ -399,6 +399,43 @@ Note: Beware of modifying this element as it can break the animations - you shou
   max-width: 800px;
   margin: 2rem auto;
   margin-bottom: 50px;
+
+  h2 {
+    margin: 20px 0px 20px 0px;
+    color: $heading-blue;
+  }
+
+  hr {
+    margin: 40px 0px;
+  }
+
+  .getting-there {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .dress-code {
+    display: inline-block;
+
+    &.location {
+      width: 150px;
+      font-weight: 600;
+    }
+  }
+
+  .addresses {
+    padding:0;
+    padding-bottom: 20px;
+  }
+
+  .address span {
+    display: block;
+  }
+
+  .note {
+    font-style: italic;
+  }
+
   .schedule-item {
     display: flex;
     margin: 14px 10px;
